@@ -19,9 +19,12 @@ Single-page marketing website for Land Kings, a land investing company operating
 ## Constraints
 
 - Static HTML/CSS/JS only — no backend, no framework
-- Space Grotesk + Inter via Google Fonts
+- Space Grotesk + Inter via Google Fonts (Inter for all body copy)
+- Brand colors: Royal Gold `#C19A50`, Regal Black `#1A1A1A`, Deep Forest Green `#305032`, Rich Earth Green `#3D6C3A`, Metallic Shadow `#6B4C20`
 - Use provided logo assets (transparent PNGs in source folder)
 - Forms: Formspree → offers@landkings.biz
+- Response time commitment: 48 hours (on all forms)
+- Birddog commission: 10% of gross sale price, paid at closing
 
 ## GSD Workflow Enforcement
 
@@ -36,15 +39,16 @@ Do not make direct repo edits outside a GSD workflow unless the user explicitly 
 
 ## Architecture
 
-Single-page marketing site with 7 sections:
-1. Hero (with trust signals above the fold)
-2. About / Who We Are
-3. What We Buy (specific acreage ranges + TX/LA counties)
-4. How It Works (4-step process)
-5. For Sellers (seller form)
-6. For Birddogs (two-tier deal submission form)
-7. For Investors (investor inquiry form)
-8. Footer
+Single-page marketing site with 8 sections + footer:
+1. Hero (with trust signals above the fold) — "Claim Your Crown. Build a Land Legacy."
+2. About — "Built by Operators, Not Theorists"
+3. What We Buy (large acreage, subdivisions, development deals — TX Triangle + Lubbock County)
+4. How It Works (4-step process: Submit → Review → Two Offers → Close)
+5. For Sellers (dual-offer method, cash + seller-finance)
+6. For Birddogs/Brokers ("Bring Us the Hairy Ones", 10% commission, fast ICs)
+7. For Investors ("How We De-Risk Dirt", milestone funding, quarterly reporting)
+8. FAQ (speed, liens/taxes, landlocked, out-of-state, guarantees)
+9. Footer
 
 Sticky header with anchor navigation. Mobile hamburger menu. Smooth scroll.
 
