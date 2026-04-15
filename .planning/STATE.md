@@ -20,6 +20,7 @@
 - **Stack:** Static HTML/CSS/JS + Formspree + Cloudflare Pages
 - **Forms:** All routed to offers@landkings.biz
 - **GitHub:** To be created under offers@landkings.biz account
+- **Response time:** 48 hours (committed on all forms)
 
 ## Key Decisions
 
@@ -27,24 +28,36 @@
 |----------|-----------|--------|
 | Single-page anchor navigation | Lower cost, mobile-friendly, fast | Active |
 | Three separate contact forms | Each audience has distinct info needs | Active |
-| Large acreage + development focus | Differentiates from commodity buyers | Active |
-| Texas + Louisiana operations | Local expertise as trust signal | Active |
+| Large acreage + subdivision focus | Differentiates from commodity buyers | Active |
+| Texas Triangle + Lubbock County | Geographic focus confirmed | Active |
 | Formspree for form handling | No backend needed, routes to offers@landkings.biz | Active |
+| 48-hour response commitment | Stated on all forms | Active |
+| 10% birddog commission | Per Bird Dog Agreement — show near birddog form | Active |
+
+## Source Materials Reviewed
+
+- `OneDrive/Desktop/Land Kings/website-copy/` — Full section copy (home, sell-land, for-brokers, invest, about, faq, playbook, growth-tracker)
+- `Legal/JV and Bird Dog Agreements/BIRD DOG AGREEMENT.docx` — 10% commission on gross sale, paid at closing
+- `Legal/JV and Bird Dog Agreements/JOINT VENTURE AGREEMENT` — JV structure details
+- `Legal/OPERATING AGREEMENT OF LAND KINGS LLC` — Company structure
+- `ChatGPT Land Kings.pdf` — Ideation document (reviewed)
+- `Grok Land Kings.docx` — Ideation document (could not read binary)
+- `Land Kings - Brand Palette (web & print).docx` — Brand colors (could not read binary)
 
 ## Research Findings Available
 
 - `.planning/research/STACK.md` — Recommended stack (plain HTML/CSS/JS, Formspree, Cloudflare Pages)
-- `.planning/research/FEATURES.md` — Feature landscape (table stakes, differentiators, anti-features)
-- `.planning/research/ARCHITECTURE.md` — Page structure and component layout
-- `.planning/research/PITFALLS.md` — 13 domain-specific pitfalls to avoid
-- `.planning/research/SUMMARY.md` — Full synthesis of all research
+- `.planning/research/FEATURES.md` — Feature landscape
+- `.planning/research/ARCHITECTURE.md` — Page structure
+- `.planning/research/PITFALLS.md` — 13 domain-specific pitfalls
+- `.planning/research/SUMMARY.md` — Full synthesis
 
-## Open Questions
+## Open Questions — NOW ANSWERED
 
-- [ ] Specific TX counties and LA parishes where Land Kings operates (needed for "What We Buy" section)
-- [ ] Referral fee structure for birddogs (needed near birddog form)
-- [ ] Years in business / transaction count for trust signals in Hero
-- [ ] Expected response time to commit to on forms (e.g., "we respond within 24 hours")
+- [x] Specific counties: **Texas Triangle (I-35/I-10/I-45 corridor) + Lubbock County**
+- [x] Birddog commission: **10% of gross sale price, paid at closing**
+- [x] Response time: **48 hours**
+- [ ] Brand colors: Need to extract from brand palette doc (or use brown/gold from logo)
 
 ---
-*Last updated: 2026-04-15 after initialization*
+*Last updated: 2026-04-15 after content review*
