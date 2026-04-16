@@ -656,8 +656,10 @@ details.tier-two {
   text-align: center;
 }
 
-.footer-brand img {
-  height: 48px;
+.footer-brand img,
+.footer-logo {
+  height: 80px;
+  width: auto;
   margin-bottom: var(--space-sm);
 }
 
@@ -676,6 +678,48 @@ details.tier-two {
   font-size: 0.75rem;
   color: var(--gray-500);
   margin-bottom: var(--space-xs);
+}
+
+.footer-social {
+  text-align: center;
+}
+
+.footer-social h4 {
+  color: var(--gold);
+  margin-bottom: var(--space-sm);
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--white);
+  background-color: var(--shadow);
+  padding: 8px 14px;
+  border-radius: var(--radius-md);
+  font-size: 0.875rem;
+  font-weight: 500;
+  transition: all var(--transition-fast);
+  border: 2px solid transparent;
+}
+
+.social-link svg {
+  width: 20px;
+  height: 20px;
+}
+
+.social-link:hover {
+  background-color: var(--gold);
+  color: var(--black);
+  border-color: var(--gold);
+  transform: translateY(-2px);
 }
 
 /* ============================================
