@@ -176,7 +176,7 @@ a:hover {
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--white);
+  background-color: var(--gray-100);
   border-bottom: 2px solid var(--gold);
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
@@ -645,8 +645,8 @@ details.tier-two {
 
 /* --- Footer --- */
 .site-footer {
-  background-color: var(--gray-900);
-  color: var(--white);
+  background-color: var(--gray-200);
+  color: var(--black);
   padding: var(--space-2xl) 0;
   border-top: 4px solid var(--gold);
 }
@@ -666,19 +666,23 @@ details.tier-two {
 }
 
 .footer-brand p {
-  color: var(--gold);
+  color: var(--forest);
   font-family: var(--font-heading);
   font-weight: 600;
 }
 
 .footer-contact h4 {
-  color: var(--gold);
+  color: var(--forest);
   margin-bottom: var(--space-xs);
+}
+
+.footer-contact p {
+  color: var(--gray-900);
 }
 
 .footer-legal p {
   font-size: 0.75rem;
-  color: var(--gray-500);
+  color: var(--gray-700);
   margin-bottom: var(--space-xs);
 }
 
@@ -687,7 +691,7 @@ details.tier-two {
 }
 
 .footer-social h4 {
-  color: var(--gold);
+  color: var(--forest);
   margin-bottom: var(--space-sm);
 }
 
