@@ -169,16 +169,16 @@ a:hover {
   width: 100%;
 }
 
-/* --- Header / Navigation --- */
+/* --- Site Header --- */
 .site-header {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 1000;
-  background-color: var(--black);
+  background-color: var(--white);
   border-bottom: 2px solid var(--gold);
-  transition: background-color var(--transition-base);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
 .header-container {
@@ -237,7 +237,7 @@ a:hover {
 }
 
 .main-nav a {
-  color: var(--white);
+  color: var(--black);
   font-size: 0.875rem;
   font-weight: 500;
   padding: var(--space-xs) var(--space-sm);
@@ -253,11 +253,12 @@ a:hover {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-color: var(--black);
-  background-image: linear-gradient(135deg, var(--black) 0%, var(--black-light) 100%);
-  color: var(--white);
+  background-color: var(--off-white);
+  background-image: none;
+  color: var(--black);
   padding-top: 80px;
   text-align: center;
+  border-bottom: 4px solid var(--gold);
 }
 
 .hero-content {
@@ -268,7 +269,7 @@ a:hover {
 .hero-title {
   font-size: 3rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--black);
   margin-bottom: var(--space-md);
   line-height: 1.1;
 }
@@ -416,15 +417,16 @@ a:hover {
 }
 
 .geo-areas {
-  background-color: var(--black);
-  color: var(--white);
+  background-color: var(--white);
+  color: var(--black);
   padding: var(--space-lg);
   border-radius: var(--radius-lg);
   text-align: center;
+  border: 2px solid var(--forest);
 }
 
 .geo-areas h4 {
-  color: var(--gold);
+  color: var(--forest);
   margin-bottom: var(--space-sm);
 }
 
@@ -643,7 +645,7 @@ details.tier-two {
 
 /* --- Footer --- */
 .site-footer {
-  background-color: var(--black);
+  background-color: var(--gray-900);
   color: var(--white);
   padding: var(--space-2xl) 0;
   border-top: 4px solid var(--gold);
@@ -701,13 +703,13 @@ details.tier-two {
   align-items: center;
   gap: 6px;
   color: var(--white);
-  background-color: var(--shadow);
+  background-color: var(--forest);
   padding: 8px 14px;
   border-radius: var(--radius-md);
   font-size: 0.875rem;
   font-weight: 500;
   transition: all var(--transition-fast);
-  border: 2px solid transparent;
+  border: 2px solid var(--forest);
 }
 
 .social-link svg {
@@ -823,9 +825,10 @@ details.tier-two {
     top: 100%;
     left: 0;
     right: 0;
-    background-color: var(--black);
+    background-color: var(--white);
     border-bottom: 2px solid var(--gold);
     padding: var(--space-md);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
   }
 
   .main-nav.active {
