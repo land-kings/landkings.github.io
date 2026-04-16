@@ -391,6 +391,34 @@ a:hover {
   margin-bottom: var(--space-xl);
 }
 
+/* --- Legal Page Styles --- */
+.legal-content h2 {
+  color: var(--forest);
+  font-size: 1.5rem;
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-sm);
+  padding-bottom: var(--space-xs);
+  border-bottom: 2px solid var(--gold);
+}
+
+.legal-content p {
+  color: var(--gray-700);
+  line-height: 1.7;
+  margin-bottom: var(--space-md);
+}
+
+.legal-content ul {
+  list-style: disc;
+  padding-left: var(--space-lg);
+  margin-bottom: var(--space-md);
+}
+
+.legal-content li {
+  color: var(--gray-700);
+  margin-bottom: var(--space-xs);
+  line-height: 1.6;
+}
+
 /* --- What We Buy Section --- */
 .section-buy {
   background-color: var(--off-white);
