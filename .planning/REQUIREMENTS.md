@@ -1,7 +1,6 @@
 # Land Kings — Requirements
-
 **Project:** Land Kings Single-Page Marketing Website
-**Last updated:** 2026-04-15
+**Last updated:** 2026-04-28
 
 ---
 
@@ -15,24 +14,24 @@
 
 ### Phase 1: Structure & Performance Foundation
 
-- [ ] **STR-01**: Semantic HTML5 single-page skeleton with all 7 sections (Hero, About, What We Buy, How It Works, For Sellers, For Birddogs, For Investors)
-- [ ] **STR-02**: Sticky header with anchor navigation to each section; hamburger menu on mobile; smooth scroll on nav click
-- [ ] **STR-03**: Mobile-first responsive CSS renders correctly at 375px, 768px, and 1024px breakpoints
-- [ ] **STR-04**: Lighthouse mobile performance score 90+; WebP logo images, preconnected Google Fonts with `font-display: swap`, single CSS file, lazy loading, Cloudflare Pages edge deployment
+- [x] **STR-01**: Semantic HTML5 single-page skeleton with all 7 sections (Hero, About, What We Buy, How It Works, For Sellers, For Birddogs, For Investors)
+- [x] **STR-02**: Sticky header with anchor navigation to each section; hamburger menu on mobile; smooth scroll on nav click
+- [x] **STR-03**: Mobile-first responsive CSS renders correctly at 375px, 768px, and 1024px breakpoints
+- [x] **STR-04**: Lighthouse mobile performance score 90+; WebP logo images, preconnected Google Fonts with `font-display: swap`, single CSS file, lazy loading, Cloudflare Pages edge deployment
 
 ### Phase 2: Content & Messaging
 
-- [ ] **CON-01**: Complete copy for all 7 sections — no placeholder text, no lorem ipsum
-- [ ] **CON-02**: "What We Buy" section lists specific acreage ranges and names TX/Louisiana parishes/counties where Land Kings operates
-- [ ] **CON-03**: "How It Works" displays a 4-step process: Submit → Review → Offer → Close
-- [ ] **CON-04**: Trust signals placed above the fold in Hero (years in business, transactions, or local presence) and repeated in each audience section
+- [x] **CON-01**: Complete copy for all 7 sections — no placeholder text, no lorem ipsum
+- [x] **CON-02**: "What We Buy" section lists specific acreage ranges and names TX/Louisiana parishes/counties where Land Kings operates
+- [x] **CON-03**: "How It Works" displays a 4-step process: Submit → Review → Offer → Close
+- [x] **CON-04**: Trust signals placed above the fold in Hero (years in business, transactions, or local presence) and repeated in each audience section
 
 ### Phase 3: Contact Forms
 
-- [ ] **FRM-01**: Seller lead form — fields: Full Name, Email, Phone, Property State (TX/LA), County, Property Address, Acreage, Estimated Value, Free & Clear (yes/no), Additional Notes — POSTs to Formspree → offers@landkings.biz
-- [ ] **FRM-02**: Birddog two-tier deal submission form — Tier 1 visible by default (Name, Email, Phone, State, County, Acreage, "I have a deal"), Tier 2 revealed on intent (APN, access type, utility type, asking price, referral fee %)
-- [ ] **FRM-03**: Investor inquiry form — fields: Full Name, Email, Investment Criteria (textarea — geography preference, acreage range, timeline), Preferred Contact Method — POSTs to Formspree → offers@landkings.biz
-- [ ] **FRM-04**: All forms show privacy assurance text, privacy policy link, and expected response time on confirmation screen
+- [x] **FRM-01**: Seller lead form — fields: Full Name, Email, Phone, Property State (TX/LA), County, Property Address, Acreage, Estimated Value, Free & Clear (yes/no), Additional Notes — POSTs to Formspree → offers@landkings.biz
+- [x] **FRM-02**: Birddog two-tier deal submission form — Tier 1 visible by default (Name, Email, Phone, State, County, Acreage, "I have a deal"), Tier 2 revealed on intent (APN, access type, utility type, asking price, referral fee %)
+- [x] **FRM-03**: Investor inquiry form — fields: Full Name, Email, Investment Criteria (textarea — geography preference, acreage range, timeline), Preferred Contact Method — POSTs to Formspree → offers@landkings.biz
+- [x] **FRM-04**: All forms show privacy assurance text, privacy policy link, and expected response time on confirmation screen
 
 ### Phase 4: QA & Launch
 
@@ -77,4 +76,4 @@
 | QA-04 | Analytics | 4 |
 
 ---
-*Last updated: 2026-04-15 after requirements definition*
+*Last updated: 2026-04-28 after phase 3 completion tracking*

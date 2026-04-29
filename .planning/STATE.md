@@ -8,10 +8,10 @@
 
 | Phase | Status | Notes |
 |-------|--------|-------|
-| 1. Structure & Performance Foundation | pending | — |
-| 2. Content & Messaging | pending | — |
-| 3. Contact Forms | pending | — |
-| 4. QA & Launch | pending | — |
+| 1. Structure & Performance Foundation | ✅ Complete | Semantic HTML, sticky nav, mobile-first CSS, Lighthouse 90+ |
+| 2. Content & Messaging | ✅ Complete | All 7 sections filled, trust signals, 4-step process |
+| 3. Contact Forms | ✅ Complete | Three forms live on Formspree (mykljznr), routed to offers@landkings.biz |
+| 4. QA & Launch | 🔜 In Progress | PageSpeed, form E2E testing, mobile testing, analytics verification |
 
 ## Context
 
