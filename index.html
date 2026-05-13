@@ -276,7 +276,8 @@
       <!-- Seller Form -->
       <div class="form-container">
         <h3>Sell Your Land</h3>
-        <form action="https://formspree.io/f/mykljznr" method="POST" class="contact-form">
+        <form action="#" method="POST" class="contact-form" onsubmit="handleSellerSubmit(event)">
+          <input type="hidden" name="submitterType" value="seller">
           <input type="hidden" name="_subject" value="Land Seller Inquiry">
 
           <div class="form-row">
@@ -383,7 +384,8 @@
       <!-- Birddog Form -->
       <div class="form-container">
         <h3>Submit a Deal</h3>
-        <form action="https://formspree.io/f/mykljznr" method="POST" class="contact-form">
+        <form action="#" method="POST" class="contact-form" onsubmit="handleBirddogSubmit(event)">
+          <input type="hidden" name="submitterType" value="broker">
           <input type="hidden" name="_subject" value="Birddog Deal Submission">
 
           <div class="form-row">
@@ -514,7 +516,8 @@
       <!-- Investor Form -->
       <div class="form-container">
         <h3>Invest With Land Kings</h3>
-        <form action="https://formspree.io/f/mykljznr" method="POST" class="contact-form">
+        <form action="#" method="POST" class="contact-form" onsubmit="handleInvestorSubmit(event)">
+          <input type="hidden" name="submitterType" value="investor">
           <input type="hidden" name="_subject" value="Investor Inquiry">
 
           <div class="form-row">
@@ -563,6 +566,97 @@
 
           <button type="submit" class="btn btn-primary btn-full">Submit Inquiry</button>
         </form>
+
+        <div style="text-align:center;margin-top:1.5rem;">
+          <button onclick="openJVModal()" style="background:transparent;border:2px solid var(--royal-gold);color:var(--royal-gold);padding:0.75rem 1.5rem;border-radius:6px;cursor:pointer;font-weight:600;transition:all 0.2s;font-family:inherit;font-size:0.9rem;">
+            JV With Us — Partnership Questionnaire
+          </button>
+        </div>
+      </div>
+
+      <!-- JV Modal -->
+      <div id="jvModal" style="display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,0.75);z-index:9999;justify-content:center;align-items:center;">
+        <div style="background:#fff;max-width:600px;width:92%;max-height:90vh;overflow-y:auto;border-radius:12px;padding:2rem;position:relative;font-family:inherit;box-shadow:0 20px 60px rgba(0,0,0,0.3);">
+          <button onclick="closeJVModal()" style="position:absolute;top:1rem;right:1rem;background:none;border:none;font-size:1.5rem;cursor:pointer;color:#999;line-height:1;">✕</button>
+          <h3 style="margin-bottom:0.5rem;color:var(--regal-black);">JV With Land Kings — Partnership Questionnaire</h3>
+          <p style="color:#666;font-size:0.875rem;margin-bottom:1.5rem;">Tell us about yourself and the partnership you're looking for. We review submissions every Friday.</p>
+          
+          <form id="jvForm" onsubmit="handleJVSubmit(event)">
+            <input type="hidden" name="submitterType" value="investor">
+            <div style="display:grid;gap:1rem;">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;">
+                <div>
+                  <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Full Name *</label>
+                  <input type="text" name="name" required style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;box-sizing:border-box;">
+                </div>
+                <div>
+                  <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Email *</label>
+                  <input type="email" name="email" required style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;box-sizing:border-box;">
+                </div>
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Phone *</label>
+                <input type="tel" name="phone" required style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;box-sizing:border-box;">
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">JV Structure *</label>
+                <select name="jvType" required style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;">
+                  <option value="">Select structure</option>
+                  <option value="equity_partner">Equity Partner — co-invest in deal</option>
+                  <option value="capital_stack">Capital Stack Position — pref/debt</option>
+                  <option value="joint_venture">Joint Venture — specific deal</option>
+                  <option value="syndication">Syndication — passive investor pool</option>
+                  <option value="referral_partner">Referral Partner — bring deals for %</option>
+                  <option value="other">Other — describe below</option>
+                </select>
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Capital Available *</label>
+                <select name="capitalAvailable" required style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;">
+                  <option value="">Select range</option>
+                  <option value="10k-50k">$10k – $50k</option>
+                  <option value="50k-100k">$50k – $100k</option>
+                  <option value="100k-250k">$100k – $250k</option>
+                  <option value="250k-500k">$250k – $500k</option>
+                  <option value="500k-1m">$500k – $1M</option>
+                  <option value="1m+">$1M+</option>
+                </select>
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Preferred Deal Size</label>
+                <select name="dealSizePreference" style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;">
+                  <option value="">Select range</option>
+                  <option value="under-100k">Under $100k</option>
+                  <option value="100k-250k">$100k – $250k</option>
+                  <option value="250k-500k">$250k – $500k</option>
+                  <option value="500k-1m">$500k – $1M</option>
+                  <option value="1m+">$1M+</option>
+                  <option value="any">Any size</option>
+                </select>
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Investment Experience</label>
+                <select name="investmentExperience" style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;">
+                  <option value="">Select level</option>
+                  <option value="first_time">First-time investor</option>
+                  <option value="1-3_deals">1–3 deals</option>
+                  <option value="4-10_deals">4–10 deals</option>
+                  <option value="10+_deals">10+ deals</option>
+                </select>
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Geographic Focus</label>
+                <input type="text" name="geographicFocus" placeholder="e.g. East Texas, North Louisiana, DFW" style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;box-sizing:border-box;">
+              </div>
+              <div>
+                <label style="display:block;font-size:0.875rem;font-weight:600;margin-bottom:0.25rem;">Tell us about your background and what you're looking for</label>
+                <textarea name="notes" rows="3" placeholder="Anything that helps us understand the fit — background, preferred deal types, timeline, etc." style="width:100%;padding:0.625rem;border:1px solid #ddd;border-radius:6px;font-size:0.875rem;box-sizing:border-box;resize:vertical;"></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" style="margin-top:1.5rem;width:100%;">Submit Application</button>
+            <p style="font-size:0.75rem;color:#999;text-align:center;margin-top:0.75rem;">We review JV applications every Friday. Expect a response within 5 business days.</p>
+          </form>
+        </div>
       </div>
     </div>
   </section>
